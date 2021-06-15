@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.MainPage">
+
+    <StackLayout Margin="16,16,16,0">
+
+        <Label
+            Text="Welcome to Xamarin.Forms!" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+            FontSize="28"
+            Margin="0,36,0,0"
+            />
+        
+        <Entry
+            x:Name="firstNameEntry"
+            Placeholder="What your First Name?"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="{AppThemeBinding Light=Black, Dark=White}"
+            TextColor="{AppThemeBinding Light=White, Dark=Black}"
+            PlaceholderColor="{AppThemeBinding Light=White, Dark=Black}"
+            />
+        
+        <Entry
+            x:Name="lastNameEntry"
+            Placeholder="What your Last Name?"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="{AppThemeBinding Light=Black, Dark=White}"
+            TextColor="{AppThemeBinding Light=White, Dark=Black}"
+            PlaceholderColor="{AppThemeBinding Light=White, Dark=Black}"
+            />
+        
+        <Entry
+            x:Name="addressEntry"
+            Placeholder="Where do you live?"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="{AppThemeBinding Light=Black, Dark=White}"
+            TextColor="{AppThemeBinding Light=White, Dark=Black}" 
+            PlaceholderColor="{AppThemeBinding Light=White, Dark=Black}"
+            />
+        
+        <Entry
+            x:Name="mobileEntry"
+            Placeholder="What is your mobile number?"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="{AppThemeBinding Light=Black, Dark=White}"
+            TextColor="{AppThemeBinding Light=White, Dark=Black}" 
+            PlaceholderColor="{AppThemeBinding Light=White, Dark=Black}"
+            />
+
+        <Button 
+            Text="Say Hello!"
+            Clicked="Button_Clicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="Green"
+            TextColor="White"
+            Margin="0,12,0,0"
+            Padding="10,2,10,2"
+            />
+
+        <Button 
+            Text="Clear!"
+            Clicked="Button_Clicked_1"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="Red"
+            TextColor="White"
+            Margin="0,0,0,22"
+            Padding="10,2,10,2"
+            />
+
+        <Label
+            x:Name="detailLabel"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            TextColor="{AppThemeBinding Light=Black, Dark=White}" 
+            FontSize="22"
+            />
+
+        <Label
+            x:Name="greetingLabel"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            TextColor="{AppThemeBinding Light=Black, Dark=White}"
+            FontSize="36"
+            Margin="0,30,0,0"
+            />
+
+    </StackLayout>
+
+</ContentPage>
